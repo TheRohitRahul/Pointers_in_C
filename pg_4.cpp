@@ -26,7 +26,7 @@ int main(void){
 
   pointer_to_yet_another_variable = "a";
 
-  // You can examine the values to see that the size of the memory taken by these pointers is indeed different
+  // You can examine the values to see that the size of the memory taken by these variables is indeed different
   std::cout <<"\nAddress of some variable is : " << pointer_to_some_variable;
   std::cout << "\nAddress to another variable is : "<< pointer_to_another_variable;
   std::cout << "\nAddress to yet another variable is : "<< &pointer_to_yet_another_variable;
