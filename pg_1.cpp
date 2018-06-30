@@ -20,10 +20,18 @@ int main(void){
   // This address will vary across multiple runs of this code (is decided dynamically)
   std::cout << "\nAddress of i is : " << &i;
 
-  // This is the value that is assigned to the variable
+  // This is the value that is assigned to the variable in line 18
   std::cout << "\nThe value of i is : " << i;
 
-  // Here we are saying "give me the value stored at the address of i"
+  /*
+  Let's break down this statement a little bit :
+  * operator would give us the value stored at an address
+  but in order for it to give us the value we need to supply it a valid address
+  In this case the & operator is giving us the address of the variable i and we are
+  feeding this address to the * operator and it is giving us the value which is at
+  the address corresponding to i. So the result of line 24 and line 35 should
+  be the same
+  */
   std::cout << "\nThe Value of i is : "<< *(&i);
 
   std::cout <<"\n";
